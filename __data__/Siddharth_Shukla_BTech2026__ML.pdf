@@ -1,0 +1,49 @@
+Siddharth Shukla
+♂phone752-101-8246 /envel⌢peshuklasiddharth418@gmail.com /linkedinlinkedin /githubgithub /gl⌢beportfolio
+Education
+Graphic Era Hill University 2022 - 2026
+Bachelor of Technology in Computer Science (GPA: 8.71 / 10) Dehradun, Uttrakhand
+Prabhat Senior Secondary Public School 2020 - 2021
+Class 12th - Percentage: 95.2% Kanpur, Uttar Pradesh
+Prabhat Senior Secondary Public School 2018 - 2019
+Class 10th - Percentage: 94.8% Kanpur, Uttar Pradesh
+Experience
+Salesforce Developer Intern (Virtual Internship) May 2025 – July 2025
+Salesforce Developer Remote
+•Developed WhatNext Vision Motors - Salesforce CRM App, a cloud based Solution for vehicle Management using
+Apex and Lightning Web Components (LWC).
+•Automated business processes and optimized data models using declarative tools, improving workﬂow eﬃciency
+and system responsiveness.
+Projects
+Airline-Passenger-Reﬀeral-Prediction |Machine Learning, Scikit-learn, Classiﬁcation, Gradio
+•Built and deployed a classiﬁcation model to predict whether a passenger will refer the airline to others, addressing a
+critical business need to improve customer satisfaction and increase referral rates by 20% based on prediction
+analysis.
+•Validated model robustness through cross-validation, conﬁrming stable performance with only a 0.02% diﬀerence in
+misclassiﬁcations compared to a single train-test split.
+•Generated a model accuracy of 94% using Logistic Regression and a precision score of 94% for the positive class.
+Advanced-Zomato-Restaurant-Clustering-and-Sentiment-Analysis |Clustering, NLP, Scikit-learn, Sentiment Analysis
+•Developed a clustering model for Zomato restaurants based on reviews and features, allowing the identiﬁcation of
+diﬀerent restaurant segments and assisting in strategic marketing decisions.
+•Faced challenges in text preprocessin g for sentiment analysis, conducted feature engineering for clustering and
+reduced dimensionality by 90% using PCA for better visualization.
+•Achieved an ROC AUC score of 0.921 with an XGBoost classiﬁer , and obtained 86% accuracy for sentiment
+classiﬁcation.
+ChatBot-Using-Deep-Learning |Keras, TensorFlow, Sequence Modeling , LSTM
+•Built and ﬁne-tuned an LSTM-based chatbot to handle natural language queries, enhancing user interaction and
+automating customer support responses.
+•Encountered challenges in managing long sequences, performed extensive text preprocessing, and used padding and
+tokenization techniques to handle variable-length inputs.
+•Implemented the model with TensorFlow and Keras, utilizing pre-trained embeddings to improve contextual
+understanding of responses, leading to a 25% improvement in response relevance.
+•Achieved a validation accuracy of 90% demonstrating a well trained language model for conversational AI.
+Skills
+Programming Languages : Java, C, C++, Python, SQL
+Machine Learning : Scikit-learn, TensorFlow, Keras, NLP, Recommender Systems, Pandas, NumPy, Hypothesis Testing,
+Jupyter Notebook, VSCode
+Concepts : Operating system, DBMS, Data Structure and Algorithm, Computer Networks, Object-Oriented Programming
+Soft-Skills : Communication, Analytical thinking, Teamwork, Adaptability, Time management.
+Achievements
+•700+ problems solved on LeetCode, with a focus on data structures and algorithms: My LeetCode Proﬁle
+•Engineered a predictive pricing model using a Decision Tree Regressor for the Kaggle ’ Backpack Prediction Challenge ,’
+achieving a Mean Absolute Error of 33.66 and ranking in the top 61% (2066/3,383) of global competitors.
