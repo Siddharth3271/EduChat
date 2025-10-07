@@ -1,0 +1,42 @@
+PAYAL JAIN  
+payalrjain777@gmail.com  | +91 -9359535845 |  LinkedIn  | GitHub  | Blogs  | Pune  
+PROFESSIONAL SUMMARY  
+I bring 2+ years of Data science and Analytics expertise , applying AI concepts to solve  intricate business challenges. Proficient in SQL, Python, 
+Machine Learning , I excel at data  manipulation , effectively communica ting insights to diverse stakeholders  and deliver measurable results.  
+WORK EXPERIENCE  
+Birlasoft | Data Analyst                                                                                                                                                                               July 2022 – Present  
+ Ingested data from diverse sources, including user inputs, order records, and EDI history, handling up to 50,000 records monthly  to 
+identify key trends and patterns through comprehensive exploratory data analysis  (EDA).  
+ Developed SQL queries  to extract, transform, and load ( ETL) data to get insights for the clients  
+Created interactive dashboards and visualizations using Tableau and Matplotlib , leading to a 40% increase  in client engagement and 
+improved reporting accuracy.  Applied data -preprocessing  techniques throughout the process.  
+ Collaborated with team to build a Machine Learning model using Regression algorithm  to forecast demands and automate processes,  
+reducing  electronic data interchange errors by 30 %. 
+PROJECTS  
+SmartGuard: Predictive Maintenance for industrial automation                                                                                     August  2024 - Sep 2024  
+ Spearheaded a cutting - edge  predictive maintenance solution  to predict machine failures using sensor data  and reduce operational 
+costs through early failure detection by 50%  
+ Engineered an extensive set of features including sensor readings for temperatur e, pressure, vibrations  and d evice type, and operating 
+conditions . Developed a robust Classification model using Azure and scikit -learn.  
+ Deployed ML algorithms such as Logistic Regression, KNN and XGBoost  with XGBoost  achieving an impressive accuracy score of 98.80 
+% ensuring reliable  machine failure prediction. Seamlessly integrated the model into Azure Data factory , and improved operational 
+safety of up to 40%  achieved.     here  
+Feedback Fusion: Enhan cing Business Intelligence through Customer Sentiment Analysis                                         July 2024 -August 2024  
+ Developed a sentiment analysis platform  that evaluate customer reviews on Amazon products to optimize product performance helping 
+business side improve efficiency, leveraging  NLP techniques  such as stop words removal,  special character filtering and lemmatization.  
+ Executed robust data cleaning and preprocessing  of dataset employing advanced NLP methods to convert raw data into actionable 
+insights. Applied TF -IDF vectorization  and developed predictive model using SVR, Random Forest and  Logistic regression  with SVR 
+achieving impressive F1-score of  85%.    here  
+News Chatbot: OpenAI in Finance domain | Using LLM                                                                                                         June 2024 -July 2024  
+ Created a robust tool for equity research analysts using LangChain and OpenAI API , boosting research efficiency by 30% . Leveraged LLM 
+techniques  for automated financial news analysis, enhancing research accuracy by 25%.  
+ Applied vector database embedding techniques, improving query precision  by 20% . Developed a user -friendly interface with Streamlit , 
+increasing user engagement and productivity by  up to 40% .     here  
+SKILLS  
+Python | SQL | Data Analysis | Statistics | Machine Learning | Langchain | LLM | Tableau| Pandas | NLP | Azure | Gen AI  
+EDUCATION  
+K.K W agh College of Engineering and Education research, Nashik  | CGPA: 8.6                                                                                    2018 -2022  
+PUBLICATIONS  
+ 
+ Overfitting – The hidden enemy of predictive power . 
+ Teaching Machines to understand us - Power of NLP and Sentiment Analysis . 

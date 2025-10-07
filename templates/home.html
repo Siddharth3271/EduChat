@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>EduTech - Gemini AI</title>
+</head>
+
+<body class="bg-gray-50">
+    <div class="relative isolate overflow-hidden bg-white min-h-screen">
+        <!-- SVG Background Pattern (Kept from original) -->
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            aria-hidden="true">
+            <defs>
+                <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+        </svg>
+
+        <div
+            class="mx-auto sm:min-h-screen w-screen flex flex-col sm:flex-row justify-center items-center px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-20 lg:py-20">
+            
+            <!-- LEFT COLUMN: TEXT AND BUTTONS -->
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+                
+                <!-- Chat Scholar Logo/Icon (Neutralized) -->
+                <div class="flex items-center ml-4 mb-4">
+                    <!-- Placeholder for a simple chat icon (replaces the hardcoded image URL) -->
+                    <svg class="h-10 w-10 text-purple-600 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <h1 class="text-3xl font-semibold text-gray-900">EduTech</h1>
+                </div>
+
+                
+                <div class="mt-8 sm:mt-12 lg:mt-4">
+                    <span
+                        class="rounded-full bg-gradient-to-br from-indigo-500 via-purple-600 to-fuchsia-500 px-3 py-1 text-sm font-semibold leading-6 text-white shadow-md">
+                        Gemini AI | LangChain RAG
+                    </span>
+                    <span class="inline-flex items-center space-x-1 text-sm font-medium leading-2 text-gray-600">
+                        <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    Gemini AI Document Analysis & Smart Grading System.
+                </h1>
+                
+                <!-- Subtitle -->
+                <p class="mt-6 text-lg leading-8 text-gray-600">
+                    Built using LangChain RAG, this application connects Google's powerful Gemini models to your custom documents for contextual Q&A and rubric-based assessment.
+                </p>
+
+                <!-- Navigation Buttons (Updated Styling for Gemini feel) -->
+                <div class="mt-10 flex flex-col justify-start items-start sm:flex-row sm:items-center gap-4">
+                    <!-- PDF Chat Button -->
+                    <a href="{{ url_for('pdf_chat') }}"
+                        class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-150 ease-in-out transform hover:scale-105">
+                        PDF Chat (RAG)
+                    </a>
+
+                    <!-- Essay Grading Button -->
+                    <a href="{{ url_for('essay_rubric') }}"
+                        class="w-full sm:w-auto bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-150 ease-in-out transform hover:scale-105">
+                        Essay Grading System
+                    </a>
+                </div>
+            </div>
+
+            
+            <div
+                class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+                <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+                    <div class="lg:-m-4 lg:rounded-2xl lg:p-4">
+                        
+                         <img src="/static/logo.png"
+                            alt="App screenshot placeholder"
+                            class="sm:w-[30rem] w-full h-auto rounded-xl shadow-2xl ring-1 ring-gray-900/10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

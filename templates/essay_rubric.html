@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Set Grading Rubric</title>
+</head>
+
+<body class="bg-gray-50">
+    <div class="relative isolate overflow-hidden bg-white min-h-screen">
+        <!-- SVG Background Pattern (Consistent Design) -->
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            aria-hidden="true">
+            <defs>
+                <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+        </svg>
+
+        <!-- Back Button (Consistent Styling) -->
+        <form action="/">
+            <button type="submit"
+                class="my-4 ml-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 rounded-xl py-2 text-sm shadow-md transition duration-150 ease-in-out transform hover:scale-105">
+                Back
+            </button>
+        </form>
+
+        <div class="mx-auto sm:h-auto w-full flex flex-col justify-center items-center px-6 pb-24 pt-10
+            sm:pb-32 lg:flex lg:px-20 lg:py-10">
+
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8 w-full">
+                
+                <!-- Chat Scholar Title -->
+                <div class="flex items-center ml-4 mb-4">
+                    <svg class="h-10 w-10 text-purple-600 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <h1 class="text-3xl font-semibold text-gray-900">EduTech</h1>
+                </div>
+
+                <!-- Badge (Updated to Gemini) -->
+                <div class="mt-4">
+                    <span
+                        class="rounded-full bg-gradient-to-br from-indigo-500 via-purple-600 to-fuchsia-500 px-3 py-1 text-sm font-semibold leading-6 text-white shadow-md">
+                        Essay Grading Rubric System
+                    </span>
+                    <span class="inline-flex items-center space-x-1 text-sm font-medium leading-2 text-gray-600">
+                        <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Main Rubric Form -->
+                <h1 class="mt-10 text-3xl font-bold tracking-tight text-gray-900">Define Your Grading Criteria</h1>
+                <p class="mt-2 text-lg leading-7 text-gray-600">
+                    Input the detailed rubric (e.g., scoring criteria, points per section) for the essay you wish to grade.
+                </p>
+                
+                <form action="/essay_grading" method="post" enctype="multipart/form-data" class="mt-8">
+                    <hr class="my-6">
+                    <div class="w-full">
+                        <div class="relative w-full">
+                            <textarea rows="8" cols="60" name="essay_rubric"
+                                class="peer resize-y h-full min-h-[200px] w-full rounded-xl border-2 border-gray-300 bg-white px-4 py-3 font-sans text-lg font-normal text-gray-900 outline-none transition-all placeholder-shown:border-gray-300 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 disabled:bg-gray-100"
+                                placeholder="E.g., Criteria 1: Structure (20 points); Criteria 2: Evidence & Analysis (50 points); Criteria 3: Grammar (30 points)"></textarea>
+                            <label
+                                class="pointer-events-none absolute left-3 top-[-10px] bg-white px-1 text-sm font-semibold text-gray-500 transition-all peer-focus:text-indigo-600">
+                                Grading Rubric Details
+                            </label>
+                        </div>
+                        
+                        <!-- Submit Button (Updated Styling) -->
+                        <div class="mt-6">
+                            <button type="submit"
+                                class="w-full sm:w-auto bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-150 ease-in-out transform hover:scale-105">
+                                Continue to Grading
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

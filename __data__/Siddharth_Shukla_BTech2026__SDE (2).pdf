@@ -1,0 +1,45 @@
+Siddharth Shukla
+♂phone752-101-8246 /envel⌢peshuklasiddharth418@gmail.com /linkedinlinkedin /githubgithub /gl⌢beportfolio
+Education
+Graphic Era Hill University 2022 - 2026
+Bachelor of Technology in Computer Science (GPA: 8.71 / 10) Dehradun, Uttrakhand
+Prabhat Senior Secondary Public School 2020 - 2021
+Class 12th - Percentage: 95.2% Kanpur, Uttar Pradesh
+Prabhat Senior Secondary Public School 2018 - 2019
+Class 10th - Percentage: 94.8% Kanpur, Uttar Pradesh
+Projects
+Airline-Passenger-Reﬀeral-Prediction |Machine Learning, Scikit-learn, Classiﬁcation, Gradio
+•Built and deployed a classiﬁcation model to predict whether a passenger will refer the airline to others, addressing a
+critical business need for improving customer satisfaction and retention.
+•Validated model robustness through cross-validation, conﬁrming stable performance with only a 0.02% diﬀerence in
+misclassiﬁcations compared to a single train-test split.
+•Generated a model accuracy of 94% using Logistic Regression and a precision score of 94% for the positive class.
+•Deployed the model using Gradio , allowing for interactive testing and feedback from business users, with a potential
+to increase referral rates by 20% based on prediction analysis.
+Mini-Compiler |C/C++, Lex, Abstract Syntax Tree, Bison
+•Engineered a custom compiler for Scriptura, a beginner-friendly programming language designed from scratch,
+successfully implementing lexical analysis and parsing.
+•Utilized Lex and an Abstract Syntax Tree (AST) to manage the parsing logic and intermediate code representation.
+Full-Stack-Expense-Tracker |Spring Boot, Java FX, CSS, SQL
+•Designed a desktop application with 15+ JavaFX UI components, integrating with a Spring Boot backend to develop
+and consume over 15 REST APIs for user authentication and full CRUD operations on expense and income data.
+•Integrated data visualization components to generate a dynamic chart of monthly income and expenses, improving
+user data analysis by 40%.
+•Automated the calculation of total income and expenses for the entire year, eliminating 30% of time for manual data
+processing by users.
+Advanced-Zomato-Restaurant-Clustering-and-Sentiment-Analysis |Clustering, NLP, Scikit-learn, Sentiment Analysis
+•Developed a clustering model for Zomato restaurants based on reviews and features, allowing the identiﬁcation of
+diﬀerent restaurant segments and assisting in strategic marketing decisions.
+•Faced challenges in text preprocessin g for sentiment analysis, conducted feature engineering for clustering and
+reduced dimensionality by 90% using PCA for better visualization.
+•Achieved an ROC AUC score of 0.921 with an XGBoost classiﬁer , and obtained 86% accuracy for sentiment
+classiﬁcation.
+Skills
+Programming Languages : Java, C, C++, Python, SQL
+Technologies : JavaFX, Spring Boot, Scikit-learn, Git, Postman, VSCode, Jupyter Notebook
+Concepts : Operating System, Artiﬁcial Intelligence, Hypothesis Testing, Machine Learning, DBMS, Agile Methodology,
+Data Structure and Algorithm, NLP, Computer Networks, Object-Oriented Programming, Microservices, REST APIs
+Soft-Skills : Communication, Analytical thinking, Teamwork, Adaptability, Time management
+Achievements
+•700+ problems solved on LeetCode, with a focus on data structures and algorithms: My LeetCode Proﬁle
+•Achieved rating of 1598 over 20 contests in leetcode.

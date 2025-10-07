@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI Essay Grading</title>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <div class="relative isolate overflow-hidden bg-white min-h-screen">
+        <!-- SVG Background Pattern -->
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            aria-hidden="true">
+            <defs>
+                <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+        </svg>
+
+        <!-- Back Button (Styled for consistency) -->
+        <form action="/">
+            <button type="submit"
+                class="my-4 ml-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 rounded-xl py-2 text-sm shadow-md transition duration-150 ease-in-out transform hover:scale-105">
+                Back
+            </button>
+        </form>
+
+        <div class="mx-auto sm:h-screen w-screen flex flex-col sm:flex-row justify-center items-center px-6 pb-24 pt-10
+            sm:pb-32 lg:flex lg:px-20 lg:py-20">
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+                <!-- Image/Icon Placeholder -->
+                <img src="/static/chat.jpg"
+                    class="h-16 w-16 ml-4" alt="Gemini AI Icon">
+
+                <div class="mt-24 sm:mt-32 lg:mt-4">
+                    <a href="#" class="inline-flex space-x-6">
+                        <span
+                            class="rounded-full bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-blue-600/10">
+                            Gemini AI Grading System</span>
+                        <span class="inline-flex items-center space-x-1 text-sm font-medium leading-2 text-gray-600">
+                            <!-- SVG Path -->
+                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                
+                <!-- Main Submission Form -->
+                <form action="/essay_grading" method="post" enctype="multipart/form-data" class="mt-8">
+                    
+                    <div class="mt-10 flex flex-col justify-start items-start gap-x-6 w-full">
+                        
+                        <!-- File Input (Cleaned up styling) -->
+                        <div class="w-full mb-6">
+                             <label for="file" class="block text-sm font-medium text-gray-700 mb-2">Upload Essay (PDF)</label>
+                            <input type="file" name="file" id="file" accept=".pdf" 
+                                class="text-sm font-semibold leading-6 text-gray-900 border-2 border-gray-300 py-2 px-4 rounded-xl block w-full text-sm text-slate-500
+                                file:mr-4 file:py-2 file:px-4
+                                file:rounded-full file:border-0
+                                file:text-sm file:font-semibold
+                                file:bg-indigo-50 file:text-indigo-600
+                                hover:file:bg-indigo-100">
+                        </div>
+
+                        <hr class="my-4 w-full">
+                        
+                        <!-- Text Area Input (Cleaned up styling) -->
+                        <div class="w-full relative min-w-[200px]">
+                             <label for="essay_text" class="block text-sm font-medium text-gray-700 mb-2">Or Enter Text Manually</label>
+                            <textarea rows="8" cols="60" name="essay_text" id="essay_text"
+                                class="peer resize-y h-full min-h-[200px] w-full rounded-xl border-2 border-gray-300 bg-white px-4 py-3 font-sans text-lg font-normal text-gray-900 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600"
+                                placeholder="Paste the text of the essay here..."></textarea>
+                        </div>
+                        
+                        <!-- Process Button (Consistent Styling) -->
+                        <button type="submit"
+                            class="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 rounded-xl py-3 text-sm shadow-md transition duration-150 ease-in-out transform hover:scale-105">
+                            Process
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- RIGHT COLUMN: ESSAY AND RESULT DISPLAY -->
+            <div class="mx-auto mt-16 sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32 w-full sm:w-1/2 h-auto">
+                
+                <!-- Input Essay Display -->
+                <div class="mb-8 p-6 bg-gray-100 rounded-xl shadow-lg border border-gray-200">
+                    <h1 class="text-xl font-semibold text-gray-800 mb-3">Input Essay</h1>
+                    <div class="bg-white border border-gray-300 rounded-lg h-64 overflow-auto">
+                        {% if input_text %}
+                            <p class="p-4 text-gray-700 text-sm whitespace-pre-wrap">{{ input_text | safe }}</p>
+                        {% else %}
+                            <p class="p-4 text-gray-500 text-sm">Submit a file or text to see the input here.</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Essay Grading Result Display -->
+                <div class="p-6 bg-gray-100 rounded-xl shadow-lg border border-gray-200">
+                    <h1 class="text-xl font-semibold text-indigo-600 mb-3">Essay Grading Result</h1>
+                    <div class="bg-white border border-indigo-300 rounded-lg h-64 overflow-auto">
+                        {% if result %}
+                            <p class="p-4 text-gray-800 text-base">{{ result | safe }}</p>
+                        {% else %}
+                            <p class="p-4 text-gray-500 text-sm">Your AI grading feedback will appear here.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

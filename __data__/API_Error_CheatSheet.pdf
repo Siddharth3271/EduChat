@@ -1,0 +1,9 @@
+Common HTTP API Errors - Debugging Cheat Sheet
+Common HTTP Error Codes and Fixes
+Code Meaning What to Check
+400 Bad Request Check if required parameters are missing or malformed.
+401 Unauthorized Verify credentials (e.g. tokens, API keys).
+403 Forbidden You might not have permission to access this.
+404 Not Found Check the URL path and parameters.
+405 Method Not Allowed Check if you used the correct HTTP method (GET/POST/etc).
+500 Internal Server Error Backend issue. Check logs for stack trace.
