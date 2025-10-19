@@ -1,9 +1,11 @@
-flask
-gunicorn
+Flask
 python-dotenv
-pypdf
+PyPDF2
+langchain
+langchain-core
 langchain-community
 langchain-google-genai
-google-api-core
-google-genai
+google-generativeai
 faiss-cpu
+requests
+tqdm
