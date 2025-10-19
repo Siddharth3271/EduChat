@@ -12,7 +12,7 @@ import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.memory import ConversationBufferMemory
-from langchain_core.prompts import PromptTemplate
+from langchain.prompts import PromptTemplate
 
 API_KEY = os.getenv("GOOGLE_API_KEY") 
 # print("API Key:", os.getenv("GOOGLE_API_KEY"))
