@@ -9,3 +9,4 @@ google-generativeai
 faiss-cpu
 requests
 tqdm
+gunicorn
