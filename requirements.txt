@@ -1,10 +1,10 @@
 Flask
 python-dotenv
 PyPDF2
-langchain
-langchain-core
-langchain-community
-langchain-google-genai
+langchain==0.3.4
+langchain-core==0.3.12
+langchain-community==0.3.3
+langchain-google-genai==1.0.5
 google-generativeai
 faiss-cpu
 requests
