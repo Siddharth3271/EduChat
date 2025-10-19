@@ -1,0 +1,9 @@
+flask
+gunicorn
+python-dotenv
+pypdf
+langchain-community
+langchain-google-genai
+google-api-core
+google-genai
+faiss-cpu
